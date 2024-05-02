@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background: linear-gradient(135deg, #000826,#42bab4);
+    --shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    --iconColor: #fff;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+}
+h1{
+    margin-bottom: 20px;
+    color: var(--iconColor);
+}
+
+.container{
+    min-width: 500px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    
+}
+.container>.scores{
+    margin-right: -307px;
+    margin-bottom: 50px;
+    text-align: right;
+}
+section{
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+}
+
+.options{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options button{
+    background:var(--background);
+    border: none;
+    color: var(--iconColor);
+    outline: none;
+    cursor: pointer;
+    height: 100px; 
+    aspect-ratio: 1/1; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+i{
+    scale: 3;
+}
+
+/* Rotate the scissors icon inside the third button */
+.options button:nth-child(3) i {
+    transform: rotate(90deg);
+}
+
+
+.details{
+    /* border: 2px solid green; */
+    margin-top : 30px;
+    text-align: center;
+}
+.scores, .details{
+    font-family: 'Popins',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#result{
+    width: 180px;
+    padding: 10px 0;
+    margin-top: 30px auto;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    /* border: 2px solid red; */
+}
+#userChoice,
+#compChoice{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+span{
+    font-weight: 600;
+}
+.again
+{
+    display: none;
+}
+
+.reStart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#restartButton{
+cursor: pointer;
+}
